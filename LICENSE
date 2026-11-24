@@ -1,0 +1,54 @@
+Copyright (c) 2026 Trương Tấn Nghĩa (AI Học Lập Trình). All Rights Reserved.
+
+=====================================================================
+TIẾNG VIỆT
+=====================================================================
+
+Bản quyền (c) 2026 Trương Tấn Nghĩa (AI Học Lập Trình). Bảo lưu mọi quyền.
+
+Toàn bộ mã nguồn, tài liệu, thiết kế, hình ảnh và các nội dung khác trong
+repository này ("Tài liệu") thuộc quyền sở hữu của tác giả.
+
+1. Việc được quyền truy cập hoặc xem repository này KHÔNG đồng nghĩa với
+   việc được cấp bất kỳ quyền nào. Nếu không có sự cho phép trước bằng văn
+   bản của tác giả, bạn không được sử dụng, sao chép, sửa đổi, hợp nhất,
+   xuất bản, phân phối, cấp phép lại, bán hoặc thương mại hóa Tài liệu,
+   dù toàn bộ hay một phần.
+
+2. License này chỉ áp dụng cho nội dung do tác giả tạo ra. Thư viện, model,
+   checkpoint, dataset và các thành phần khác của bên thứ ba thuộc về chủ
+   sở hữu tương ứng và tuân theo license riêng của chúng (xem
+   THIRD_PARTY_NOTICES.md). License này không cấp và không giới hạn bất kỳ
+   quyền nào đối với các thành phần đó.
+
+3. Tài liệu được cung cấp "NGUYÊN TRẠNG" (AS IS), không có bất kỳ bảo đảm
+   nào, dù rõ ràng hay ngụ ý. Tác giả không chịu trách nhiệm cho bất kỳ
+   thiệt hại nào phát sinh từ việc sử dụng Tài liệu.
+
+Liên hệ xin phép sử dụng: https://github.com/TruongTanNghia
+
+=====================================================================
+ENGLISH
+=====================================================================
+
+Copyright (c) 2026 Trương Tấn Nghĩa (AI Học Lập Trình). All Rights Reserved.
+
+All source code, documentation, designs, images and other content in this
+repository (the "Materials") are the property of the author.
+
+1. Access to or visibility of this repository does NOT grant any rights.
+   Without the author's prior written permission, you may not use, copy,
+   modify, merge, publish, distribute, sublicense, sell or otherwise
+   commercialize the Materials, in whole or in part.
+
+2. This license applies only to content created by the author. Third-party
+   libraries, models, checkpoints, datasets and other components belong to
+   their respective owners and are governed by their own licenses (see
+   THIRD_PARTY_NOTICES.md). This license neither grants nor restricts any
+   rights in those components.
+
+3. The Materials are provided "AS IS", without warranty of any kind, express
+   or implied. In no event shall the author be liable for any damages arising
+   from the use of the Materials.
+
+Permission requests: https://github.com/TruongTanNghia

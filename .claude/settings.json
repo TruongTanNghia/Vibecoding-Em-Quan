@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo NHAC NHO BAT BUOC: Truoc khi code, thiet ke hay viet tai lieu, hay doc .claude/skills/project-workflow/SKILL.md roi doc cac skill chuyen mon lien quan theo bang trong CLAUDE.md"
+          }
+        ]
+      }
+    ]
+  }
+}

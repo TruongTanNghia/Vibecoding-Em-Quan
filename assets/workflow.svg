@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="Quy trình AutoLabel Studio: Import Dataset, Select Annotation Task, Select Model, Hardware Check, rẽ nhánh Local GPU/CPU hoặc Remote Kaggle CLI, Auto Annotation, Human Review, Validation, Export.">
+  <title>AutoLabel Studio workflow</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0E4A63"/>
+    </marker>
+    <marker id="arrowO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#F28C1B"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="470" rx="20" fill="#FCF6EC"/>
+  <text x="40" y="40" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="800" fill="#0E4A63">Auto-annotation workflow <tspan font-size="14" font-weight="600" fill="#1E8FA8">(thiết kế đề xuất)</tspan></text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <!-- Hàng 1 -->
+    <rect x="30"  y="64" width="230" height="64" rx="12" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/>
+    <text x="145" y="92" fill="#0E4A63">1 · Import Dataset</text>
+    <text x="145" y="114" font-size="12" font-weight="500" fill="#1E8FA8">không copy ảnh nguồn</text>
+
+    <rect x="320" y="64" width="230" height="64" rx="12" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/>
+    <text x="435" y="92" fill="#0E4A63">2 · Select Task</text>
+    <text x="435" y="114" font-size="12" font-weight="500" fill="#1E8FA8">BBox · SEG · POSE</text>
+
+    <rect x="610" y="64" width="230" height="64" rx="12" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/>
+    <text x="725" y="92" fill="#0E4A63">3 · Select Model</text>
+    <text x="725" y="114" font-size="12" font-weight="500" fill="#1E8FA8">chặn model–task không hợp lệ</text>
+
+    <rect x="900" y="64" width="230" height="64" rx="12" fill="#0E4A63"/>
+    <text x="1015" y="92" fill="#FCF6EC">4 · Hardware Check</text>
+    <text x="1015" y="114" font-size="12" font-weight="500" fill="#3BB8C3">compute router giải thích lý do</text>
+
+    <!-- Hàng 2: nhánh -->
+    <rect x="690" y="190" width="220" height="64" rx="12" fill="#FFFFFF" stroke="#1E8FA8" stroke-width="2.5"/>
+    <text x="800" y="218" fill="#1E8FA8">Local GPU / CPU</text>
+    <text x="800" y="240" font-size="12" font-weight="500" fill="#0E4A63">mặc định · local-first</text>
+
+    <rect x="950" y="190" width="220" height="64" rx="12" fill="#FFFFFF" stroke="#F28C1B" stroke-width="2.5" stroke-dasharray="7 4"/>
+    <text x="1060" y="218" fill="#C96A05">Remote Kaggle CLI</text>
+    <text x="1060" y="240" font-size="12" font-weight="500" fill="#0E4A63">tùy chọn · cần xác nhận upload</text>
+
+    <!-- Hàng 3 (chạy từ phải sang trái) -->
+    <rect x="900" y="330" width="230" height="64" rx="12" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/>
+    <text x="1015" y="358" fill="#0E4A63">5 · Auto Annotation</text>
+    <text x="1015" y="380" font-size="12" font-weight="500" fill="#1E8FA8">nhãn nháp · có provenance</text>
+
+    <rect x="610" y="330" width="230" height="64" rx="12" fill="#FFB547" stroke="#F28C1B" stroke-width="2"/>
+    <text x="725" y="358" fill="#0E4A63">6 · Human Review</text>
+    <text x="725" y="380" font-size="12" font-weight="500" fill="#0E4A63">accept · edit · reject</text>
+
+    <rect x="320" y="330" width="230" height="64" rx="12" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/>
+    <text x="435" y="358" fill="#0E4A63">7 · Validation</text>
+    <text x="435" y="380" font-size="12" font-weight="500" fill="#1E8FA8">geometry · class · keypoint</text>
+
+    <rect x="30" y="330" width="230" height="64" rx="12" fill="#0E4A63"/>
+    <text x="145" y="358" fill="#FCF6EC">8 · Export</text>
+    <text x="145" y="380" font-size="12" font-weight="500" fill="#3BB8C3">YOLO · COCO</text>
+  </g>
+
+  <!-- Mũi tên -->
+  <g stroke="#0E4A63" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <line x1="262" y1="96" x2="316" y2="96"/>
+    <line x1="552" y1="96" x2="606" y2="96"/>
+    <line x1="842" y1="96" x2="896" y2="96"/>
+    <line x1="990" y1="130" x2="826" y2="186"/>
+    <line x1="800" y1="256" x2="980" y2="326"/>
+    <line x1="898" y1="362" x2="844" y2="362"/>
+    <line x1="608" y1="362" x2="554" y2="362"/>
+    <line x1="318" y1="362" x2="264" y2="362"/>
+  </g>
+  <g stroke="#F28C1B" stroke-width="2.5" fill="none" stroke-dasharray="7 4" marker-end="url(#arrowO)">
+    <line x1="1040" y1="130" x2="1056" y2="186"/>
+    <line x1="1060" y1="256" x2="1040" y2="326"/>
+  </g>
+  <!-- Vòng sửa lại khi validation lỗi -->
+  <path d="M435 396 C 435 440, 725 440, 725 398" fill="none" stroke="#1E8FA8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  <text x="580" y="452" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#1E8FA8">có lỗi → quay lại review</text>
+
+  <!-- Chú thích -->
+  <text x="40" y="236" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#0E4A63">Kaggle chỉ là <tspan font-weight="700">compute worker</tspan> được điều khiển bằng CLI —</text>
+  <text x="40" y="256" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#0E4A63">không phải giao diện. Desktop app luôn là nơi quản lý dữ liệu.</text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="AutoLabel Studio — From Raw Images to Review-Ready Datasets. Minh họa canvas gán nhãn với bounding box, polygon mask và pose keypoints.">
+  <title>AutoLabel Studio banner</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCF6EC"/>
+      <stop offset="1" stop-color="#F3E3CC"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDF2F4"/>
+      <stop offset="1" stop-color="#F7EEDF"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#0E4A63" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <!-- Nền -->
+  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="380" rx="24" fill="url(#dots)"/>
+
+  <!-- Họa tiết mạng nơ-ron mờ -->
+  <g stroke="#1E8FA8" stroke-width="1.5" opacity="0.18" fill="none">
+    <line x1="520" y1="40" x2="600" y2="80"/><line x1="600" y1="80" x2="650" y2="40"/>
+    <line x1="600" y1="80" x2="630" y2="130"/><line x1="520" y1="40" x2="560" y2="120"/>
+    <line x1="560" y1="120" x2="630" y2="130"/>
+  </g>
+  <g fill="#1E8FA8" opacity="0.25">
+    <circle cx="520" cy="40" r="5"/><circle cx="600" cy="80" r="6"/><circle cx="650" cy="40" r="4"/>
+    <circle cx="560" cy="120" r="4"/><circle cx="630" cy="130" r="5"/>
+  </g>
+
+  <!-- Tiêu đề -->
+  <text x="60" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="800" fill="#0E4A63">AutoLabel <tspan fill="#F28C1B">Studio</tspan></text>
+  <text x="62" y="196" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#1E8FA8">From Raw Images to Review-Ready Datasets</text>
+
+  <!-- Chips -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="60"  y="226" width="76"  height="30" rx="15" fill="#0E4A63"/><text x="98"  y="246" fill="#FCF6EC">BBOX</text>
+    <rect x="146" y="226" width="64"  height="30" rx="15" fill="#1E8FA8"/><text x="178" y="246" fill="#FCF6EC">SEG</text>
+    <rect x="220" y="226" width="74"  height="30" rx="15" fill="#F28C1B"/><text x="257" y="246" fill="#FFFFFF">POSE</text>
+    <rect x="304" y="226" width="104" height="30" rx="15" fill="none" stroke="#0E4A63" stroke-width="2"/><text x="356" y="246" fill="#0E4A63">LOCAL AI</text>
+    <rect x="418" y="226" width="124" height="30" rx="15" fill="none" stroke="#F28C1B" stroke-width="2"/><text x="480" y="246" fill="#C96A05">REMOTE GPU</text>
+  </g>
+
+  <!-- Pipeline YOLO → SAM → Human Review -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="60"  y="286" width="88"  height="34" rx="8" fill="#FFFFFF" stroke="#0E4A63" stroke-width="2"/><text x="104" y="308" fill="#0E4A63">YOLO</text>
+    <rect x="190" y="286" width="80"  height="34" rx="8" fill="#FFFFFF" stroke="#1E8FA8" stroke-width="2"/><text x="230" y="308" fill="#1E8FA8">SAM</text>
+    <rect x="312" y="286" width="150" height="34" rx="8" fill="#FFB547" stroke="#F28C1B" stroke-width="2"/><text x="387" y="308" fill="#0E4A63">HUMAN REVIEW</text>
+  </g>
+  <g stroke="#0E4A63" stroke-width="2.5" fill="#0E4A63">
+    <line x1="152" y1="303" x2="180" y2="303"/><polygon points="186,303 178,298 178,308"/>
+    <line x1="274" y1="303" x2="302" y2="303"/><polygon points="308,303 300,298 300,308"/>
+  </g>
+
+  <!-- Cửa sổ canvas minh họa -->
+  <g>
+    <rect x="700" y="40" width="440" height="300" rx="14" fill="#FFFFFF" stroke="#0E4A63" stroke-opacity="0.35" stroke-width="2"/>
+    <path d="M700 54 a14 14 0 0 1 14 -14 h412 a14 14 0 0 1 14 14 v20 h-440 z" fill="#0E4A63"/>
+    <circle cx="722" cy="57" r="5" fill="#F28C1B"/><circle cx="740" cy="57" r="5" fill="#3BB8C3"/><circle cx="758" cy="57" r="5" fill="#FCF6EC"/>
+    <text x="780" y="62" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#FCF6EC">annotation canvas — minh họa</text>
+
+    <rect x="716" y="88" width="408" height="236" rx="8" fill="url(#sky)"/>
+    <rect x="716" y="296" width="408" height="28" fill="#F3E3CC"/>
+
+    <!-- Xe + bounding box -->
+    <path d="M778 250 l18 -20 h52 l18 20 z" fill="#1E8FA8"/>
+    <rect x="760" y="250" width="124" height="40" rx="10" fill="#0E4A63"/>
+    <circle cx="784" cy="292" r="11" fill="#14232B"/><circle cx="860" cy="292" r="11" fill="#14232B"/>
+    <rect x="750" y="222" width="144" height="86" fill="none" stroke="#F28C1B" stroke-width="3"/>
+    <rect x="750" y="204" width="88" height="18" fill="#F28C1B"/>
+    <text x="756" y="218" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">car 0.88</text>
+
+    <!-- Người + pose skeleton -->
+    <rect x="916" y="124" width="98" height="172" fill="none" stroke="#0E4A63" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="916" y="104" width="128" height="18" fill="#0E4A63"/>
+    <text x="922" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FCF6EC">person 0.92 · POSE</text>
+    <g stroke="#1E8FA8" stroke-width="3" stroke-linecap="round">
+      <line x1="960" y1="160" x2="945" y2="166"/><line x1="960" y1="160" x2="975" y2="166"/>
+      <line x1="945" y1="166" x2="935" y2="190"/><line x1="935" y1="190" x2="930" y2="215"/>
+      <line x1="975" y1="166" x2="988" y2="188"/><line x1="988" y1="188" x2="998" y2="210"/>
+      <line x1="945" y1="166" x2="950" y2="216"/><line x1="975" y1="166" x2="970" y2="216"/>
+      <line x1="950" y1="216" x2="970" y2="216"/>
+      <line x1="950" y1="216" x2="946" y2="250"/><line x1="946" y1="250" x2="942" y2="285"/>
+      <line x1="970" y1="216" x2="976" y2="250"/><line x1="976" y1="250" x2="982" y2="285"/>
+    </g>
+    <circle cx="960" cy="141" r="10" fill="none" stroke="#1E8FA8" stroke-width="3"/>
+    <g fill="#F28C1B" stroke="#FFFFFF" stroke-width="1.5">
+      <circle cx="960" cy="160" r="4.5"/><circle cx="945" cy="166" r="4.5"/><circle cx="975" cy="166" r="4.5"/>
+      <circle cx="935" cy="190" r="4.5"/><circle cx="988" cy="188" r="4.5"/><circle cx="930" cy="215" r="4.5"/>
+      <circle cx="998" cy="210" r="4.5"/><circle cx="950" cy="216" r="4.5"/><circle cx="970" cy="216" r="4.5"/>
+      <circle cx="946" cy="250" r="4.5"/><circle cx="976" cy="250" r="4.5"/><circle cx="942" cy="285" r="4.5"/>
+      <circle cx="982" cy="285" r="4.5"/>
+    </g>
+
+    <!-- Cây + polygon mask -->
+    <rect x="1064" y="205" width="12" height="52" fill="#8A6A4A"/>
+    <polygon points="1040,200 1030,170 1045,140 1070,125 1095,135 1110,160 1105,190 1085,205 1060,208" fill="#3BB8C3" fill-opacity="0.40" stroke="#1E8FA8" stroke-width="2"/>
+    <g fill="#FFFFFF" stroke="#1E8FA8" stroke-width="1.5">
+      <rect x="1037" y="197" width="6" height="6"/><rect x="1027" y="167" width="6" height="6"/><rect x="1042" y="137" width="6" height="6"/>
+      <rect x="1067" y="122" width="6" height="6"/><rect x="1092" y="132" width="6" height="6"/><rect x="1107" y="157" width="6" height="6"/>
+      <rect x="1102" y="187" width="6" height="6"/><rect x="1082" y="202" width="6" height="6"/><rect x="1057" y="205" width="6" height="6"/>
+    </g>
+    <rect x="1030" y="262" width="84" height="18" fill="#1E8FA8"/>
+    <text x="1036" y="276" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">tree · SEG</text>
+  </g>
+
+  <!-- Watermark -->
+  <text x="1140" y="366" text-anchor="end" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#0E4A63" opacity="0.7">© Trương Tấn Nghĩa · AI Học Lập Trình</text>
+</svg>

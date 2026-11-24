@@ -1,0 +1,19 @@
+# ADR-XXXX: [Tiêu đề quyết định]
+
+- **Trạng thái:** Proposed | Accepted | Superseded by ADR-YYYY
+- **Ngày:** YYYY-MM-DD
+
+## Bối cảnh
+Vấn đề cần quyết định là gì? Ràng buộc nào?
+
+## Các phương án
+1. **Phương án A** — ưu: ... / nhược: ...
+2. **Phương án B** — ưu: ... / nhược: ...
+
+## Quyết định
+Chọn phương án ..., vì ...
+
+## Hệ quả
+- Tích cực: ...
+- Đánh đổi / rủi ro: ...
+- Việc cần làm kèm theo: ...
